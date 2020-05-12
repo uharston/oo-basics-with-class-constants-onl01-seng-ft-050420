@@ -6,8 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each_with_index do |value, index|
-      if !value == @brand
+    if BRANDS.exclude?(@brand)
         BRANDS << @brand
       end
     end
