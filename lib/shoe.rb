@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each_with_index do |value, index|
+    BRANDS.each do |value|
       if value == @brand
         BRANDS << @brand
       end
